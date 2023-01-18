@@ -9,6 +9,7 @@
        <StudentsTable :item="item" @edit="openEditForm" @delete="deleteStudent"></StudentsTable>
      </tr>
    </table>
+   
    <form v-if="isEdit" class="student-form">
     
      <AddStudent :student="newStudent"></AddStudent>
@@ -90,5 +91,20 @@ openEditForm(item) {
 cancelEdit() {
   this.isEdit = false;
 }},
+  updateStudent2(newStudent) {
+    axios.put(`http://34.82.81.113:3000/students/${newStudent._id}`,
+      {
+        name: newStudent.name,
+        isDonePr: newStudent.isDonePr,
+        group: newStudent.group
+      }).then(
+        (response) => {
+          console.log(response);
+        }
+      );
+
+  },
+
+
 }
 </script>
