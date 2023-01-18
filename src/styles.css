@@ -1,0 +1,44 @@
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+td {
+  text-align: center;
+}
+
+#app {
+  width: 80%;
+  margin: 0 auto;
+}
+
+input {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.highlight {
+  color: rgb(255, 84, 84);
+}
+
+.student-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
