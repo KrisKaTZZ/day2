@@ -1,4 +1,13 @@
 <template>
+  <div class="main">
+    <div class="content">
+      <router-view></router-view>
+    </div>
+  </div>
+</template>
+
+
+<!-- <template>
   <div id="app" >
   <div class="container pt-4">
       <div class="wrapper" id="app">
@@ -107,4 +116,4 @@ cancelEdit() {
 
 
 }
-</script>
+</script> -->

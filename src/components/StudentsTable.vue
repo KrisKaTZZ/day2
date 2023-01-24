@@ -1,5 +1,8 @@
 <template>
   <template v-if="!isEdit">
+  <td > <router-link class="btn btn" :to="'/student-info/'+item._id">
+     {{item.name}}
+    </router-link></td>
     <td>{{item.name}}</td>
     <td><input type="checkbox" v-model="item.isDonePr"></td>
     <td>{{item.group}}</td>
